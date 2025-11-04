@@ -1,0 +1,55 @@
+.header_links {
+    text-decoration: none;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+header nav .mini-logo {
+    display: flex;
+    align-items: center;
+}
+
+header nav .mini-logo img {
+    width: 50px;
+}
+
+.mini-logo p {
+    font-family: "Momo Trust Display";
+}
+
+.header_links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.header_links a {
+    text-decoration: none;
+    color: var(---main-font);
+    font-family: 'Momo Trust Sans';
+    font-weight: 800;
+}
+
+.header_button {
+    width: 100px;
+    height: 30px;
+    border: 2px solid var(---button-bg);
+    text-align: center;
+    padding: 2px;
+    color: var(---main-font);
+    text-decoration: none;
+
+    font-family: 'Momo Trust Sans';
+    font-weight: 600;
+}
+
+.header_button:hover {
+    box-shadow: 2px 2px black;
+    transition: all 0.2s ease-in-out;
+}
