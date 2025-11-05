@@ -1,0 +1,21 @@
+.line_sec {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 120px 0 !important;
+    height: 40px;
+    justify-content: center;
+    background-color: var(---main-text-primary);
+    gap: 20px;
+    transform: rotate(-2deg);
+}
+
+.line_sec p {
+    font-family: "Momo Trust Sans";
+    color: var(---main-bg);
+}
+
+.line_sec p:hover {
+    color: var(---bright-red);
+    transition: all 0.3s ease-in-out;
+}
