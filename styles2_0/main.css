@@ -3,6 +3,7 @@
 @import "./header.css";
 @import "./home.css";
 @import "./line.css";
+@import "./info.css";
 
 :root {
     ---main-text-primary: #000000;

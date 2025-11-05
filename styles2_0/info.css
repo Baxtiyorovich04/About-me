@@ -1,0 +1,28 @@
+.info_sec {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+.info_title_sec h3 {
+    font-family: "Momo Trust Sans";
+    margin-bottom: 15px;
+}
+
+.info_title_sec h1 {
+    font-family: "Momo Trust Display";
+    font-weight: 400;
+}
+
+.info_desc_sec h2 {
+    font-family: "Momo Trust Sans";
+    margin-bottom: 15px;
+}
+
+.info_desc_sec p {
+    font-family: "Momo Trust Sans";
+    color: var(---secondary-text);
+    font-weight: 800;
+
+}
