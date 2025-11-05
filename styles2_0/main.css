@@ -4,6 +4,7 @@
 @import "./home.css";
 @import "./line.css";
 @import "./info.css";
+@import "./stats.css";
 
 :root {
     ---main-text-primary: #000000;

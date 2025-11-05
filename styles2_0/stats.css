@@ -1,0 +1,40 @@
+.stats_sec {
+    margin-top: 80px !important;
+}
+
+.stats_sec {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.stats_sec div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 340px;
+    gap: 10px;
+    padding: 30px;
+    border: 2px solid var(---main-text-primary);
+    margin-bottom: 40px;
+}
+
+.stats_sec div b {
+    font-family: "Momo Trust Display";
+    font-weight: 800;
+    font-size: 24px;
+}
+
+.stats_sec div p {
+    font-family: "Momo Trust Sans";
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.stats_sec div:nth-child(2) {
+    color: var(---main-bg);
+    background-color: var(---main-text-primary);
+}
