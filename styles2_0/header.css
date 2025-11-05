@@ -6,6 +6,7 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
+    transition: all 0.3s ease-in-out;
 
 }
 
@@ -15,7 +16,8 @@ header nav .mini-logo {
 }
 
 header nav .mini-logo img {
-    width: 50px;
+    width: 40px;
+
 }
 
 .mini-logo p {
@@ -34,7 +36,14 @@ header nav .mini-logo img {
     color: var(---main-font);
     font-family: 'Momo Trust Sans';
     font-weight: 800;
+    transition: all 0.3s ease-in-out;
 }
+
+.header_links a:hover {
+    color: var(---bright-red);
+    transition: all 0.3s ease-in-out;
+}
+
 
 .header_button {
     width: 100px;
@@ -50,6 +59,20 @@ header nav .mini-logo img {
 }
 
 .header_button:hover {
-    box-shadow: 2px 2px black;
+    box-shadow: 2px 2px var(---bright-red);
     transition: all 0.2s ease-in-out;
+}
+
+.scrolled {
+    position: fixed;
+    top: 10px;
+    left: 0;
+    right: 0;
+    height: 70px;
+    z-index: 1000;
+    transition: all 0.3s ease-in-out;
+    background-color: var(---background-color, #f5f0ebcc);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    border-radius: 100px;
+    backdrop-filter: blur(5px);
 }

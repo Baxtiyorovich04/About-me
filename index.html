@@ -10,7 +10,7 @@
 
 <body>
     <!-- Header -->
-    <header class="container ">
+    <header class="container  ">
         <nav class="header">
             <div class="mini-logo">
                 <img src="./imgs/heart.png" alt="">
@@ -27,7 +27,23 @@
         </nav>
 
     </header>
+    <div style="height: 100vh; " class="container">
+        adjdlkafla
+    </div>
+    <div style="height: 100vh;" class="container">
+        adjdlkafla
+    </div>
 
 </body>
+<script>
+    const header = document.querySelector('header')
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 20) {
+            header.classList.add('scrolled');
+        } else {
+            header.classList.remove('scrolled');
+        }
+    });
+</script>
 
 </html>
