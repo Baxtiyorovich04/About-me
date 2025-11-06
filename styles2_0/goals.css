@@ -1,0 +1,67 @@
+.goals_sec {
+    margin-top: 150px !important;
+}
+
+.achivments_title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.achivments_title h3 {
+    font-family: "Momo Trust Display";
+    font-size: 32px;
+}
+
+.achivments_title p {
+    font-family: "Momo Trust Sans";
+    font-weight: 800;
+}
+
+.ach_cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+
+.ach_card {
+    border: 2px solid var(---main-text-primary);
+    width: 80%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    margin-top: 30px;
+}
+
+.ach_card img {
+    height: 40px;
+
+}
+
+.card_desc a {
+    font-family: "Momo Trust Display";
+    text-decoration: none;
+    color: var(---main-text-primary);
+    font-size: 18px;
+}
+
+.card_desc a:hover {
+    color: var(---bright-red);
+    transition: all 0.3s ease-in-out;
+}
+
+.card_desc p {
+    font-family: "Momo Trust Sans";
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.years {
+    font-family: "Momo Trust Display";
+}

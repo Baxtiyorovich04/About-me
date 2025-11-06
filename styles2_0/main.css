@@ -5,6 +5,7 @@
 @import "./line.css";
 @import "./info.css";
 @import "./stats.css";
+@import "./goals.css";
 
 :root {
     ---main-text-primary: #000000;
@@ -25,8 +26,14 @@ font-family: "Momo Trust Sans";  */
     font-family: var(---main-font);
 }
 
+html {
+    /* to make the changing sections smooth */
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: var(---main-bg);
+
 }
 
 .container {
