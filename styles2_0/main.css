@@ -6,6 +6,7 @@
 @import "./info.css";
 @import "./stats.css";
 @import "./goals.css";
+@import "./portfoli.css";
 
 :root {
     ---main-text-primary: #000000;

@@ -1,0 +1,243 @@
+.portfolio_sec {
+    margin-top: 150px !important;
+}
+
+.pf_cards_sec {
+    margin-top: 48px;
+    display: grid;
+    gap: 24px;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.pf_card {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 22px;
+    border-radius: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.88), rgba(245, 240, 235, 0.38));
+    box-shadow: 0 18px 40px -34px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    isolation: isolate;
+}
+
+.pf_card::before {
+    content: "";
+    position: absolute;
+    inset: -50% 70% auto -35%;
+    height: 200%;
+    background: radial-gradient(circle at center, rgba(237, 74, 59, 0.32), rgba(237, 74, 59, 0));
+    filter: blur(0);
+    z-index: -1;
+}
+
+.pf_media {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    width: 100%;
+}
+
+.pf_image_wrapper {
+    position: relative;
+    display: block;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 16px 36px -30px rgba(0, 0, 0, 0.52);
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    min-height: 160px;
+}
+
+.pf_image_wrapper img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.pf_overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.55);
+    color: #fff;
+    font-family: "Momo Trust Sans";
+    font-weight: 600;
+    font-size: 11px;
+    letter-spacing: 0.05em;
+    opacity: 0;
+    transform: translateY(8px);
+    transition: all 0.35s ease;
+}
+
+.pf_image_wrapper:hover img {
+    transform: scale(1.04);
+}
+
+.pf_image_wrapper:hover .pf_overlay {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.pf_tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.pf_tags span {
+    padding: 6px 12px;
+    border-radius: 999px;
+    background: rgba(39, 39, 39, 0.08);
+    font-family: "Momo Trust Sans";
+    font-size: 10px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.pf_card_desc {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.pf_card_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 6px;
+    font-family: "Momo Trust Sans";
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    font-size: 11px;
+    color: rgba(0, 0, 0, 0.55);
+}
+
+.pf_label {
+    background: rgba(237, 74, 59, 0.12);
+    padding: 4px 8px;
+    border-radius: 999px;
+    color: var(---bright-red);
+}
+
+.pf_year {
+    font-weight: 700;
+}
+
+.pf_card_desc h4 {
+    font-family: "Momo Trust Display";
+    font-size: 26px;
+    line-height: 1.05;
+}
+
+.pf_card_desc p {
+    font-family: "Momo Trust Sans";
+    font-weight: 600;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.78);
+    line-height: 1.55;
+}
+
+.pf_highlights {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0;
+    margin: 0;
+}
+
+.pf_highlights li {
+    position: relative;
+    padding-left: 20px;
+    font-family: "Momo Trust Sans";
+    font-size: 13px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.pf_highlights li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 6px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(---bright-red), rgba(237, 74, 59, 0.4));
+    box-shadow: 0 0 0 3px rgba(237, 74, 59, 0.18);
+}
+
+.pf_actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.pf_actions a {
+    text-decoration: none;
+    font-family: "Momo Trust Sans";
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    border-radius: 999px;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+}
+
+.pf_primary {
+    background: var(---button-bg);
+    color: var(---main-bg);
+    box-shadow: 0 12px 22px -20px rgba(39, 39, 39, 0.68);
+}
+
+.pf_primary:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 18px 28px -22px rgba(39, 39, 39, 0.62);
+}
+
+.pf_secondary {
+    background: transparent;
+    color: var(---button-bg);
+    border: 1px solid rgba(39, 39, 39, 0.22);
+}
+
+.pf_secondary:hover {
+    border-color: var(---button-bg);
+    color: var(---bright-red);
+}
+
+@media (min-width: 1040px) {
+    .pf_card {
+        grid-template-columns: minmax(220px, 0.85fr) 1fr;
+        gap: 24px;
+    }
+}
+
+@media (max-width: 720px) {
+    .pf_card {
+        padding: 20px;
+        border-radius: 18px;
+    }
+
+    .pf_card_desc h4 {
+        font-size: 24px;
+    }
+
+    .pf_actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .pf_actions a {
+        width: 100%;
+        text-align: center;
+    }
+}
