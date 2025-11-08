@@ -1,0 +1,283 @@
+.contact_sec {
+    margin-top: 150px !important;
+    margin-bottom: 100px;
+}
+
+.contact_content {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+}
+
+.contact_subtitle {
+    font-family: "Momo Trust Sans";
+    font-size: 18px;
+    font-weight: 600;
+    color: var(---secondary-text);
+    text-align: center;
+    max-width: 600px;
+}
+
+.social_links {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+    width: 100%;
+    max-width: 900px;
+}
+
+.social_card {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 28px;
+    border-radius: 20px;
+    border: 2px solid var(---main-text-primary);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(245, 240, 235, 0.6));
+    text-decoration: none;
+    color: var(---main-text-primary);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    overflow: hidden;
+    isolation: isolate;
+}
+
+.social_card::before {
+    content: "";
+    position: absolute;
+    inset: -50% 80% auto -30%;
+    height: 200%;
+    background: radial-gradient(circle at center, rgba(237, 74, 59, 0.15), rgba(237, 74, 59, 0));
+    filter: blur(0);
+    z-index: -1;
+    transition: all 0.6s ease;
+}
+
+.social_card:hover::before {
+    inset: -50% -30% auto 80%;
+}
+
+.social_card:hover {
+    transform: translateY(-4px);
+    border-color: var(---bright-red);
+    box-shadow: 0 20px 40px -24px rgba(237, 74, 59, 0.4);
+}
+
+.social_icon {
+    width: 56px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 14px;
+    background: var(---button-bg);
+    color: var(---main-bg);
+    flex-shrink: 0;
+    transition: all 0.3s ease;
+}
+
+.social_card:hover .social_icon {
+    background: var(---bright-red);
+    transform: scale(1.1) rotate(5deg);
+}
+
+.social_icon svg {
+    width: 28px;
+    height: 28px;
+}
+
+.social_info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.social_info h4 {
+    font-family: "Momo Trust Display";
+    font-size: 22px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.social_info p {
+    font-family: "Momo Trust Sans";
+    font-size: 14px;
+    font-weight: 500;
+    color: var(---secondary-text);
+    margin: 0;
+}
+
+.social_arrow {
+    font-family: "Momo Trust Display";
+    font-size: 24px;
+    color: var(---secondary-text);
+    transition: all 0.3s ease;
+    flex-shrink: 0;
+}
+
+.social_card:hover .social_arrow {
+    color: var(---bright-red);
+    transform: translateX(6px);
+}
+
+/* Footer Styles */
+.footer {
+    background: var(---button-bg);
+    color: var(---main-bg);
+    padding: 60px 0 30px;
+    margin-top: 100px;
+}
+
+.footer_content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    margin-bottom: 40px;
+}
+
+.footer_left {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer_logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer_logo img {
+    height: 24px;
+}
+
+.footer_logo p {
+    font-family: "Momo Trust Display";
+    font-size: 24px;
+    color: var(---main-bg);
+}
+
+.footer_tagline {
+    font-family: "Momo Trust Sans";
+    font-size: 15px;
+    font-weight: 500;
+    color: rgba(245, 240, 235, 0.8);
+    line-height: 1.6;
+    max-width: 400px;
+}
+
+.footer_right {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: flex-end;
+}
+
+.footer_links {
+    display: flex;
+    gap: 32px;
+    flex-wrap: wrap;
+}
+
+.footer_links a {
+    font-family: "Momo Trust Sans";
+    font-size: 14px;
+    font-weight: 600;
+    color: var(---main-bg);
+    text-decoration: none;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.footer_links a::after {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(---bright-red);
+    transition: width 0.3s ease;
+}
+
+.footer_links a:hover {
+    color: var(---bright-red);
+}
+
+.footer_links a:hover::after {
+    width: 100%;
+}
+
+.footer_social {
+    display: flex;
+    gap: 16px;
+}
+
+.footer_social a {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background: rgba(245, 240, 235, 0.1);
+    color: var(---main-bg);
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.footer_social a:hover {
+    background: var(---bright-red);
+    transform: translateY(-2px);
+}
+
+.footer_social svg {
+    width: 20px;
+    height: 20px;
+}
+
+.footer_bottom {
+    border-top: 1px solid rgba(245, 240, 235, 0.2);
+    padding-top: 30px;
+    text-align: center;
+}
+
+.footer_bottom p {
+    font-family: "Momo Trust Sans";
+    font-size: 13px;
+    font-weight: 500;
+    color: rgba(245, 240, 235, 0.7);
+}
+
+@media (max-width: 768px) {
+    .contact_content {
+        gap: 36px;
+    }
+
+    .social_links {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .social_card {
+        padding: 24px;
+    }
+
+    .footer_content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .footer_right {
+        align-items: flex-start;
+    }
+
+    .footer_links {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
