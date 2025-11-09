@@ -221,7 +221,22 @@
     }
 }
 
+@media (max-width: 1024px) {
+    .portfolio_sec {
+        padding: 0 20px;
+    }
+
+    .pf_cards_sec {
+        grid-template-columns: 1fr;
+    }
+}
+
 @media (max-width: 720px) {
+    .portfolio_sec {
+        margin-top: 100px !important;
+        padding: 0 15px;
+    }
+
     .pf_card {
         padding: 20px;
         border-radius: 18px;
@@ -239,5 +254,41 @@
     .pf_actions a {
         width: 100%;
         text-align: center;
+    }
+
+    .pf_card_desc p {
+        font-size: 13px;
+    }
+
+    .pf_highlights li {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .portfolio_sec {
+        margin-top: 80px !important;
+    }
+
+    .pf_card {
+        padding: 16px;
+    }
+
+    .pf_card_desc h4 {
+        font-size: 20px;
+    }
+
+    .pf_card_desc p {
+        font-size: 12px;
+    }
+
+    .pf_highlights li {
+        font-size: 11px;
+        padding-left: 18px;
+    }
+
+    .pf_actions a {
+        padding: 8px 16px;
+        font-size: 11px;
     }
 }

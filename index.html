@@ -398,6 +398,13 @@
         </div>
      </footer>
      <!-- END OF FOOTER -->
+     <!-- BACK TO TOP BUTTON -->
+     <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M18 15l-6-6-6 6"/>
+        </svg>
+     </button>
+     <!-- END OF BACK TO TOP BUTTON -->
 </body>
 <script>
     const header = document.querySelector('header')
@@ -408,6 +415,25 @@
             header.classList.remove('scrolled');
         }
     });
+
+    // Back to top button
+    const backToTopButton = document.getElementById('backToTop');
+    
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 300) {
+            backToTopButton.classList.add('visible');
+        } else {
+            backToTopButton.classList.remove('visible');
+        }
+    });
+
+    backToTopButton.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+
 </script>
 
 </html>

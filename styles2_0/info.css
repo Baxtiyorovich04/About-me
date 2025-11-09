@@ -24,5 +24,41 @@
     font-family: "Momo Trust Sans";
     color: var(---secondary-text);
     font-weight: 800;
+}
 
+@media (max-width: 1024px) {
+    .info_sec {
+        flex-direction: column;
+        gap: 40px;
+        padding: 0 20px;
+    }
+
+    .info_title_sec,
+    .info_desc_sec {
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .info_title_sec h1 {
+        font-size: 32px;
+    }
+
+    .info_desc_sec h2 {
+        font-size: 20px;
+    }
+
+    .info_desc_sec p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .info_title_sec h1 {
+        font-size: 24px;
+    }
+
+    .info_desc_sec h2 {
+        font-size: 18px;
+    }
 }
