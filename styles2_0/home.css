@@ -47,23 +47,25 @@
     background-color: transparent;
     color: var(---main-text-primary);
 }
+
 .main_pc {
-width: 300px;
-height: 300px;
+    width: 300px;
+    height: 300px;
 
 
-border-radius: 200px;
+    border-radius: 200px;
 }
 
-.main_pc img{
-width: 100%;
+.main_pc img {
+    width: 100%;
 }
 
 @media (max-width: 1024px) {
+
     .main_sec {
-        flex-direction: column;
+        flex-direction: column-reverse;
         gap: 40px;
-        padding-top: 60px;
+        padding-top: 80px !important;
     }
 
     .main_text_sec {

@@ -31,11 +31,16 @@ font-family: "Momo Trust Sans";  */
 html {
     /* to make the changing sections smooth */
     scroll-behavior: smooth;
+
 }
 
 body {
     background-color: var(---main-bg);
 
+}
+
+.no-scroll {
+    overflow-y: hidden;
 }
 
 .container {

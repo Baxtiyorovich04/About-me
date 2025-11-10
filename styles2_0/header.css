@@ -78,3 +78,60 @@ header nav .mini-logo img {
     backdrop-filter: blur(5px);
 
 }
+
+.side_bar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 10000;
+    width: 250px;
+    height: 100vh;
+    padding: 30px;
+    transition: all 0.3s ease-in-out;
+    background-color: var(---background-color, #f5f0ebcc);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    backdrop-filter: blur(5px);
+    display: none;
+}
+
+.side_bar img {
+    width: 32px;
+    height: 32px;
+    position: fixed;
+    top: 15px;
+    right: 15px;
+}
+
+.side_bar ul {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+
+}
+
+.side_bar a {
+    height: 50px;
+    width: 100%;
+    text-decoration: none;
+    font-family: "Momo Trust Sans";
+    font-weight: 700px;
+    color: var(---main-text-primary);
+}
+
+.side_bar a:hover {
+    transition: all 0.3s ease-in-out;
+    color: var(---bright-red);
+}
+
+@media (max-width:1024px) {
+    .header_button {
+        display: none;
+    }
+
+    .header_links {
+        display: none;
+    }
+}
